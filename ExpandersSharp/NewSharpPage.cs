@@ -17,7 +17,9 @@ public class NewSharpPage : ContentPage
             RowDefinitions =
             {
 // DOESN'T (VISIBLY) EXPAND ON WINDOWS WITH 1ST ROW SET TO GRIDLENGTH.AUTO
-                new RowDefinition{Height = GridLength.Auto},
+//                new RowDefinition{Height = GridLength.Auto},
+// (VISIBLY) EXPANDS ON WINDOWS WITH 1ST ROW SET TO GRIDLIENGTH.STAR
+                new RowDefinition(GridLength.Star),
                 new RowDefinition{Height = GridLength.Auto},
                 new RowDefinition(GridLength.Star),
             },
